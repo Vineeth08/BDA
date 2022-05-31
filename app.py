@@ -1,3 +1,15 @@
+import pandas as pd
+import numpy as np
+import pickle
+
+
+from flask import Flask
+from flask import request
+
+app = Flask(__name__)
+
+
+@app.route('/')
 def main():
     return 'Container is up & running'
 
